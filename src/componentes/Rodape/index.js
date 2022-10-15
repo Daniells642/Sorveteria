@@ -4,8 +4,8 @@ import './estilo.css';
 export default function Rodape() {
     return (
       <footer>
-        <div>
-            <img src="../assets/logo.png" title="" alt="" />
+        <div className=' limitar-secao container-logo-informacoes'>
+            <img src="../assets/logo.png" title="logomarca" alt="logomarca" />
             <div>
                 <h3>ENDEREÇO</h3>
                 <p>Av. Bernardino de Campos, 98</p>
@@ -25,7 +25,7 @@ export default function Rodape() {
             </div>
         </div>
 
-        <div>
+        <div className='limitar-secao direito-autoral'>
             <p>Gelateria. Orgulhosamente devenvolvido por Daniel Lima Sousa</p>
         </div>
 

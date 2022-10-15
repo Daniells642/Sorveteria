@@ -1,23 +1,24 @@
-import React from "react";
-import Topo from '../../componentes/Topo/';
+import Topo from "../../componentes/Topo";
 import Rodape from "../../componentes/Rodape";
-import './estilo.css';
 
-function Home() {
-    return (
-      <div>
-          <Topo />
+import './estilo.css'
 
-          <main>
-        <section>
-          <div>
+export default function Home() {
+  return(
+    <div>
+
+      <Topo />
+
+      <main>
+        <section className="secao-banner">
+          <div className="texto-banner">
             <h1>SORVETE ARTESANAL</h1>
           </div>
         </section>
 
-        <section>
+        <section className="secao-nossos-sabores">
           <img src="assets/banner-sabores.jpg" alt="sorvetes diversos" />
-          <div>
+          <div className="texto-secao-nossos-sabores">
             <h2>NOSSOS SABORES</h2>
             <span>Novos e deliciosos!</span>
             <p>
@@ -30,8 +31,8 @@ function Home() {
           </div>
         </section>
 
-        <section>
-          <div>
+        <section className="secao-nossos-eventos">
+          <div className="texto-secao-nossos-eventos">
               <h2>NOSSOS EVENTOS</h2>
               <span>Delicias com sorvete!</span>
               <p>
@@ -43,9 +44,9 @@ function Home() {
           <img src="assets/eventos-image.jpg" alt="mesa de festa" />
         </section>
 
-        <section>
+        <section className="secao-sobre-nos">
           <img src="assets/sobre-image.jpg" alt="pessoas comendo sorvete" />
-          <div>
+          <div className="texto-secao-sobre-nos">
             <h2>SOBRE NÓS</h2>
             <span>Alegria em cada casquinha!</span>
             <p>
@@ -60,8 +61,7 @@ function Home() {
       </main>
 
       <Rodape />
-      </div>
-    );
-  }
-  
-  export default Home;
+
+    </div>
+  )
+}

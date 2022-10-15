@@ -1,39 +1,47 @@
-.secao-topo {
-    background-color: #fff56b;
+header {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(249, 219, 121);
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: auto;
+  height: 60px;
+}
+
+header nav {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-topo {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 662px){
+  header div{
+    flex-direction: column;
+  }
+
+  header nav {
+    border-top: 1px solid grey;
     width: 100%;
-}
-
-.secao-topo .limitar-secao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 60px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
-.topo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-}
-
-.topo img {
-    height: 80px;
-}
-
-.topo-links {
-    display: flex;
-}
-
-.opcao-link {
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-}
-
-.opcao-link:hover {
-    color: white;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
 }
