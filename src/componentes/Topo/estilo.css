@@ -1,0 +1,39 @@
+.secao-topo {
+    background-color: #fff56b;
+    width: 100%;
+}
+
+.secao-topo .limitar-secao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.topo img {
+    height: 80px;
+}
+
+.topo-links {
+    display: flex;
+}
+
+.opcao-link {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.opcao-link:hover {
+    color: white;
+}
